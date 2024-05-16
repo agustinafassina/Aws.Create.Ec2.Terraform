@@ -6,8 +6,9 @@
 
 # Steps:
 ## Terraform
+```
 terraform init
 terraform apply
-
+```
 
 ## Aws and yml
