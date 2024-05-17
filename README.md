@@ -1,14 +1,14 @@
 # Ec2.MongoDB.Terraform.Aws
 
-# Requirenments:
+## Requirenments:
 * Terraform install
 * Aws Key Pair (test.pem)
 
-# Steps:
-## Terraform
+## Steps:
+### Terraform
 ```
 terraform init
 terraform apply
 ```
 
-## Aws and yml
+### Aws and yml
