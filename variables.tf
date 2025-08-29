@@ -1,26 +1,25 @@
 variable "region" {
-  description = "La región de AWS"
+  description = "AWS region to deploy resources"
 }
 
 variable "ami_id" {
-  description = "ID de la AMI para la instancia EC2"
+  description = "ID of the AMI to use for the EC2 instance"
 }
 
 variable "instance_type" {
-  description = "Tipo de instancia EC2"
+  description = "Ec2 instance type"
 }
 
 variable "key_name" {
-  description = "Nombre de la llave SSH para acceder a la instancia"
+  description = "Name of the key pair to access the instance"
 }
 
 variable "instance_name" {
-  description = "Nombre de la instancia EC2"
+  description = "Instance name"
 }
 
-
 variable "security_group_name" {
-  description = "Nombre de la instancia EC2"
+  description = "Group name"
 }
 
 variable "vpc_id" {
@@ -29,4 +28,8 @@ variable "vpc_id" {
 
 variable "user_instance" {
   description = "Username for the instance"
+}
+
+variable "access_key_path" {
+  description = "Key path for the instance"
 }

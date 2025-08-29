@@ -1,5 +1,5 @@
 # ECS Instance Security group
-resource "aws_security_group" "tf-ecs-public-sg" {
+resource "aws_security_group" "tf-security-group" {
   name        = var.security_group_name
   description = "ECS public access security group"
   vpc_id      = var.vpc_id
@@ -9,6 +9,7 @@ resource "aws_security_group" "tf-ecs-public-sg" {
     to_port   = 22
     protocol  = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
+    description = "Allow SSH traffic"
   }
 
   egress {
@@ -17,6 +18,7 @@ resource "aws_security_group" "tf-ecs-public-sg" {
     to_port   = "0"
     protocol  = "-1"
     cidr_blocks = ["0.0.0.0/0"]
+    description = "Allow SSH traffic"
   }
 
 }
