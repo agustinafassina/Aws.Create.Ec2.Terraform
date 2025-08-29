@@ -6,7 +6,7 @@ This Terraform configuration sets up a simple AWS infrastructure with an EC2 ins
 - Aws account
 - Aws Key Pair (test.pem)
 - Create qa.tfvars file
-- Variables: qa.tfvars
+- Define variables in qa.tfvars
 
 ## Steps with terraform
 1. Terraform init and terraform workspace
