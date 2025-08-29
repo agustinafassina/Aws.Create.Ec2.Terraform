@@ -19,7 +19,8 @@ terraform workspace select qa
 2. Terraform plan
 ```
 terraform plan -var-file qa.tfvars
-
+```
 3. Terraform apply
 ```
 terraform apply -var-file qa.tfvars
+```
